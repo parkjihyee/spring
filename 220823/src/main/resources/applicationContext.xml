@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="testJava.Speaker" id="speaker" />
+	<bean class="testJava.SamsungTV" id="samsungTV" />
+	<!-- Samsung TV samsungTV = new SamsungTV 와 같은 의미 -->
+<!-- 		<property name="speaker" ref="speaker" /> -->
+	
+<!-- 	<bean class="testJava.LgTV" id="lgTV"> -->
+<!-- 		<property name="tv" ref="samsungTV" /> -->
+<!-- 	</bean>  -->
+</beans> 
+<!-- IoC 컨테이너에 올라가게 하기 위해 --> 
