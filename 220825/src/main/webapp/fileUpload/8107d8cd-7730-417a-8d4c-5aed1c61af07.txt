@@ -1,0 +1,23 @@
+webapp - WEBINF - spring - appServlet - [dataSource-context.xml] 파일 생성 하고 
+
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="micol" />
+		<property name="password" value="1234" />
+
+1. 환경설정
+2. data-source 
+
+
+=>
+src/main/resources
+	mybatis-config 폴더 생성
+		mybatis-config.xml 파일 생성
+
+=>
+dataSource-context.xml - Namespaces - mybatis 체크
+
+
+
+classpath 는 resourses 폴더
+classpath* 는 java 폴더?

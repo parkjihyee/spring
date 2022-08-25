@@ -22,7 +22,7 @@
 	</bean> -->
 
 
-	<!-- DAO -->
+	<!-- DAO --> <!-- mybatisConfig 폴더 - [db.properties.file] 필요! -->
 	<bean class="org.apache.commons.dbcp2.BasicDataSource" id="dataSource" destroy-method="close">
 	  <property name="driverClassName" value="${driver}" />
       <property name="url" value="${url}" />
