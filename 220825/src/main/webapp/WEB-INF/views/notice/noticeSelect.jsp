@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-${n.noticeId } : ${n.noticeTitle} : ${n.noticeSubject }
+	<h2>게시글 상세보기</h2>
+	<tr>
+		<td>${n.noticeId }</td>
+		<td>${n.noticeWriter }</td>
+		<td>${n.noticeTitle }</td>
+		<td>${n.noticeHit }</td>
+	</tr> 
 </body>
 </html>

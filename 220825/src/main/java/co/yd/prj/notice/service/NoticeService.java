@@ -12,7 +12,7 @@ public interface NoticeService { // list, map 객체를 이용해서
 	int noticeInsert(NoticeVO vo);
 	int noticeUpdate(NoticeVO vo);
 	int noticeDelete(NoticeVO vo);
-	
+	int noticeHitUpdate(NoticeVO vo); // 조회수 증가
 	List<NoticeVO> noticeSearch(String key, String val); // 제목에 어떤 단어가 포함되어있으면 다 불러오라
 	
 }

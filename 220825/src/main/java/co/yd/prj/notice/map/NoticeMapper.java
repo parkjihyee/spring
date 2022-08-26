@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import co.yd.prj.notice.service.NoticeVO;
 
@@ -17,6 +18,8 @@ public interface NoticeMapper {
 	int noticeInsert(NoticeVO vo);
 	int noticeUpdate(NoticeVO vo);
 	int noticeDelete(NoticeVO vo);
+	
+	int noticeHitUpdate(NoticeVO vo); // 조회수 증가
 	
 	//                                  속성 명               사용할 변수 명    val의 타입
 	List<NoticeVO> noticeSearch(@Param("key") String key, @Param("val") String val);

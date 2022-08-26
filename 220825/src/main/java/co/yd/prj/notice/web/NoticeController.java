@@ -28,10 +28,11 @@ public class NoticeController {
 	@Autowired
 	private ServletContext servletContext; //컨테이너에 있는 contextpath(webapp)를 찾는것
 	
-	@RequestMapping("/noticeSelect.do") // 단 건 조회
+	@PostMapping("/noticeSelect.do") // 단 건 조회
 	public String noticeSelect(NoticeVO vo, Model model) { 
-		vo.setNoticeId(23); // 강제로 하나의 레코드를 선택하기 위해 만든 것
+		//vo.setNoticeId(23); // 강제로 하나의 레코드를 선택하기 위해 만든 것
 		model.addAttribute("n", ns.noticeSelect(vo));
+		ns.noticeHitUpdate(vo); //조회수 증가
 		return "notice/noticeSelect";
 	}
 	
