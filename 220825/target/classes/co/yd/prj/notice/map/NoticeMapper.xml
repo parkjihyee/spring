@@ -10,7 +10,7 @@
 		NOTICE_SUBJECT,
 		NOTICE_DATE,
 		NOTICE_HIT,
-		NOTICE_ATTECH
+		NOTICE_ATTACH
 		FROM NOTICE
 		WHERE NOTICE_ID = #{noticeId}
 	</select>
@@ -22,7 +22,7 @@
 		</selectKey>
 		
 		INSERT INTO NOTICE
-		VALUES(#{noticeId}, #{noticeWriter}, #{noticeTitle}, #{noticeSubject}, #{noticeDate}, 0, #{noticeAttech}, #{noticeAttechdir})
+		VALUES(#{noticeId}, #{noticeWriter}, #{noticeTitle}, #{noticeSubject}, #{noticeDate}, 0, #{noticeAttach}, #{noticeAttachdir})
 	</insert>
 	
 	<update id="noticeUpdate">
@@ -32,8 +32,8 @@
 			<if test="noticeTitle !=null">NOTICE_TITLE = #{noticeTitle},</if>
 			<if test="noticeSubject !=null">NOTICE_SUBJECT = #{noticeSubject},</if>
 			<if test="noticeDate !=null">NOTICE_DATE = #{noticeDate},</if>
-			<if test="noticeAttech !=null">NOTICE_ATTECH = #{noticeAttech},</if>
-			<if test="noticeAttechdir !=null">NOTICE_ATTECHDIR = #{noticeAttechdir}</if>
+			<if test="noticeAttech !=null">NOTICE_ATTACH = #{noticeAttach},</if>
+			<if test="noticeAttechdir !=null">NOTICE_ATTACHDIR = #{noticeAttachdir}</if>
 		</set>
 		where notice_id = #{noticeId}
 	</update>

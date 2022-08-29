@@ -15,8 +15,8 @@ public class NoticeVO {
 	@JsonFormat(pattern = "yyyy-MM-dd", timezone = "Asia/Seoul")
 	private Date noticeDate;
 	private int noticeHit;
-	private String noticeAttech;
-	private String noticeAttechdir;
+	private String noticeAttach;
+	private String noticeAttachdir;
 	
 	
 }

@@ -10,7 +10,9 @@
 <h1>
 	Hello~!  
 </h1>
-
+		<div>
+			<button type="button" onclick="location.href='noticeSelectList.do'">공지사항</button>
+		</div>
 
 </body>
 </html>

@@ -62,7 +62,7 @@
 					<td>${N.NOTICE_DATE }</td>
 					<td>${N.NOTICE_HIT }</td> 
 					<c:choose>
-					  <c:when test="${not empty N.NOTICEATTECH }">
+					  <c:when test="${not empty N.NOTICEATTACH }">
 					   <td align="center">@</td>
 					  </c:when>
 					<c:otherwise>
@@ -148,7 +148,7 @@ function searchCall(){ // ajax 검색처리
                     $("<td><a href=${n.noticeTitle}</a></td>").text(item.noticeTitle),
                     $("<td />").text(item.noticeDate),
                     $("<td />").text(item.noticeHit),
-                    $("<td />").text(item.noticeattech),
+                    $("<td />").text(item.noticeattach),
                         
                  );
            tbody.append(row);

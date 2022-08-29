@@ -58,8 +58,8 @@ public class NoticeController {
 		// 자바 UUID 객체로 : 파일명 충돌방지를 위한 파일 별명 만들기
 		String sFileName = UUID.randomUUID().toString() + oFileName.substring(oFileName.lastIndexOf(".")); // 고유한 랜덤아이디 + (.jsp*)확장자명을 잘라서붙임
 		file.transferTo(new File(sfile, sFileName)); //파일을 물리적 위치에 저장한다. sfile 공간에 sFileName(UUID)이름으로 저장하자
-		vo.setNoticeAttech(oFileName);
-		vo.setNoticeAttechdir(saveFolder + File.separator + sFileName); //fileUpload/273747.txt
+		vo.setNoticeAttach(oFileName);
+		vo.setNoticeAttachdir(saveFolder + File.separator + sFileName); //fileUpload/273747.txt
 		}
 		
 		ns.noticeInsert(vo); // 행위를 실행시킨다
